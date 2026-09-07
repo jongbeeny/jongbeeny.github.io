@@ -276,17 +276,7 @@ function IndustryBody({ card }) {
 function CraftBody({ card }) {
   return (
     <div className="pf-body pf-body--craft">
-      <div className="pf-craft-split">
-        <div className="pf-craft-skills">
-          <ul className="pf-craft-skilllist">
-            {card.skills.map((s, i) =>
-            <li key={i} className="pf-craft-skill">
-                <span className="pf-craft-skill-name">{s.name}</span>
-                <span className="pf-craft-skill-desc">{s.desc}</span>
-              </li>
-            )}
-          </ul>
-        </div>
+      <div className="pf-craft-split pf-craft-split--solo">
         <div className="pf-craft-product">
           <div className="pf-craft-prod-name">{card.product.name}</div>
           <div className="pf-craft-prod-namestrong">{card.product.nameStrong}</div>
